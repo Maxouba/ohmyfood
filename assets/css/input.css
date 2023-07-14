@@ -1,0 +1,35 @@
+/****** Section choix du restaurant ***********/
+
+.localisation {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    height: 56.5px;
+    background-color: var(--greycolor);
+    height: 62.5px;
+    position: relative;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+/****** Champ de saisie de la ville ***********/
+
+input{
+    display: flex;
+    text-align: center;
+    border: none;
+    background-color: var(--greycolor);
+}
+
+
+::placeholder{
+    margin: 0%;
+    color: var(--blackcolor);
+    font-size: 16px;
+    font-weight: 500;
+}
+
