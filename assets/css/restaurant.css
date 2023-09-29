@@ -1,0 +1,137 @@
+/****** Section Restaurant ***********/
+
+
+
+
+.restaurant {
+    background-color: var(--greycolor);
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+}
+
+/****** Titre Restaurant ***********/
+
+.restaurant__title {
+    margin-bottom: 1rem;
+}
+
+/****** Cards des Restaurants ***********/
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card__img {
+    height: 12rem;
+    width: 100%;
+    border: transparent solid 0px;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: none;
+    object-fit: cover;
+}
+
+/****** Badge "Nouveau" dans les cards Restaurants ***********/
+
+.card__badge {
+    background-color: var(--greencolor);
+    color: #1b6150;
+    padding: 0.5rem;
+    border-radius: 0.125rem;
+    position: absolute;
+    top: 1rem;
+    right: 0.75rem;
+}
+
+/****** Footer des cards Restaurants ***********/
+
+.card__footer {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card__title{
+    margin: 0;
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.card__subtitle {
+    margin: 0;
+    font-weight: 300;
+}
+
+.card__container__title {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/****** Icone coeur des cards Restaurants ***********/
+
+
+.card__footer i {
+    position: absolute;
+    height: 21px;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+ }
+
+.like-icon__full{
+    opacity: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(red,blue);
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+
+.like-icon__full:hover {
+    opacity: 1;
+    }
+
+/* Le code ci-dessous correspond à la version desktop uniquement */
+
+/****** Media queries ***********/
+
+@media (min-width:768px) {
+
+
+    /****** Cards des restaurants  ***********/
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .restaurant {
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+    }
+
+    .restaurant__title {
+        margin-bottom: 28px;
+    }
+
+
+}

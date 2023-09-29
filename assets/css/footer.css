@@ -1,0 +1,90 @@
+
+/****** Section Footer ***********/
+
+
+footer {
+    display:block;
+    background-color: var(--footercolor);
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+/****** Logo du footer Ohmyfood ***********/
+
+.footer__logo {
+    color: white;
+    margin: 0;
+    font-size: 1.2rem;
+    justify-content: flex-start;
+}
+
+.footer__logo h3{
+    font-family: 'Shrikhand', cursive;
+}
+
+
+/****** Lien de navigation du footer ***********/
+
+.footer__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__list--page {
+    margin: 0.5rem 0;
+}
+
+.footer__link {
+    color: white;
+    text-decoration: none;
+}
+
+/****** Icones du footer ***********/
+
+.footer__icon {
+    width: 1.2rem;
+    margin-right: 0.5rem;
+    position: relative;
+}
+
+/* Le code ci-dessous correspond à la version desktop uniquement */
+
+/****** Media queries ***********/
+
+@media (min-width:768px) {
+
+    /****** Footer qui passe de colonne à ligne   ***********/
+    footer {
+    display: flex;
+    width: 96%;
+    height: 54px;
+    padding: 30px 25px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 16px;
+    flex-shrink: 0;
+    }
+
+    .footer .container{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0;
+    }
+
+    .footer__list{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__list--page{
+        padding-left: 1rem;
+    }
+
+    .footer__logo{
+        padding-left: 2rem;
+    }

@@ -1,0 +1,202 @@
+/****** Section menu des restaurants ***********/
+
+
+.header__restaurant{
+    display: block;
+}
+
+
+
+
+/****** Image en header des pages de restaurant ***********/
+
+.header_img{
+    height: 275px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    box-shadow: none;
+    object-fit: cover;
+}
+
+/****** Container des pages de menu ***********/
+
+.menu{
+    margin-top: -4rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: relative;
+}
+
+.submenu{
+    overflow: hidden;
+}
+
+.menu-item{
+    animation: appear 1s;
+}
+
+/****** Titre du restaurant ***********/
+
+.menu__header {
+    padding-top: 32px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__title {
+    font-family: "Shrikhand", "cursive";
+}
+
+/****** Bouton coeur ***********/
+
+.menu__btn{
+    height: 2rem;
+    width: 2rem;
+    border: transparent 0px solid;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    background-color: #f6f6f6;
+    margin-left: 5px;
+}
+
+/****** Section des menus du restaurant ***********/
+
+.submenus {
+    display: grid;
+}
+
+.submenu {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 1rem;
+}
+
+.submenu__title{
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 0.5rem;
+    font-weight: normal;
+    padding-top: 42px;
+}
+
+/****** Ligne sous les titres du type de plat ***********/
+
+.submenu__line{
+    content: "";
+    width: 3rem;
+    height: 0.25rem;
+    background-color: var(--greencolor);
+    left: 0;
+    bottom: 0;
+}
+
+
+/****** Card d'un item ***********/
+
+.menu-item {
+    background-color: white;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 0.75rem;
+    margin: 1rem 0;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    max-width: 100%;
+    padding: 15px;
+    gap: 5px;
+    flex: 1 0 0;
+}
+
+
+/****** Nom du plat et accompagnement ***********/
+
+.menu-item__header{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1;
+}
+
+.submenu__title {
+    margin: 0;
+}
+
+.menu-item__title {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu-item__description {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 300;
+    font-size: 15px;
+
+}
+
+.menu-item__price{
+
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 0.5rem;
+}
+
+/****** Bouton commander ***********/
+
+.sectionbtn{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49.6%;
+    font-size: 16px;
+}
+
+/* Le code ci-dessous correspond à la version desktop uniquement */
+
+/****** Media queries ***********/
+
+@media (min-width:768px) {
+
+    /****** Section des menus du restaurants ***********/
+
+    .menu{
+        margin-left: auto;
+        margin-right: auto;
+        width: 73%;
+        flex-shrink: 0;
+        
+    }
+
+    .menu__header{
+        justify-content: center;
+    }
+
+    
+
+}
+
+

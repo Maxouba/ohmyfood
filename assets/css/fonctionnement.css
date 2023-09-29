@@ -1,0 +1,109 @@
+/****** Section Fonctionnement ***********/
+
+.fonctionnement {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+}
+
+/****** Titre Fonctionnement ***********/
+.fonctionnement__title {
+        margin-top: 0;
+        font-size: 24px;
+}
+
+/****** Liste des étapes Fonctionnement ***********/
+
+.fonctionnement_steps {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: compteListe;
+}
+
+.fonctionnement__number {
+    counter-increment: compteListe 1;
+    content: counter(compteListe) " ";
+    background: var(--explorestaurant);
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    left: -0.75rem;
+}
+
+/****** Bloc des étapes Fonctionnement ***********/
+
+
+.fonctionnement_step {
+    padding: 1.5rem;
+    margin: 1rem 0 1rem 0.75rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+    border-radius: 1.25rem;
+    background-color: #f6f6f6;
+    display: flex;
+    position: relative;
+}
+
+/****** Icones de la liste  ***********/
+
+.fonctionnement_step i {
+    display: flex;
+    align-items: center;
+    color: var(--iconcolor);
+    margin-right: 1rem;
+}
+
+/****** Texte des étapes de fonctionnement ***********/
+
+.fonctionnement__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Le code ci-dessous correspond à la version desktop uniquement */
+
+/****** Media queries ***********/
+
+@media (min-width:768px) {
+        
+
+    /****** Liste des étapes c  ***********/
+
+    /*Section Fonctionnement*/
+
+    .fonctionnement {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    /*Class pour toutes les étapes de fonctionnement*/
+
+    .fonctionnement_steps {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 2%;
+    }
+
+    /*Class pour une étape de fonctionnement*/
+
+    .fonctionnement_step {
+        width: 33%;
+    }
+
+
+}
+

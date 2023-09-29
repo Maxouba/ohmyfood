@@ -1,11 +1,15 @@
 /****** Import ***********/
-@import url(/assets/css/header.css);
-@import url(/assets/css/input.css);
-@import url(/assets/css/about.css);
+@import url(./header.css);
+@import url(./input.css);
+@import url(./about.css);
+@import url(./footer.css);
+@import url(./fonctionnement.css);
+@import url(./restaurant.css);
+@import url(./menu_restaurant.css);
+@import url(./animation.css);
 
 /****** General ***********/
 * {
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     scroll-behavior: smooth;
@@ -14,20 +18,46 @@
 /****** Couleur des différentes polices ***********/
 :root {
     --bodycolor: #FFFFFF;
-    --pinkcolor: #FF79DA;
-    --greencolor: #99E2D0;
+    --backgroundcolor: #f6f6f6;
     --greycolor: #EAEAEA;
-    --backgroundcolor: #F3F3F3;
+    --iconcolor: #7e7e7e;
+    --footercolor: #353535;
     --blackcolor:#101010;
-    --explorestaurant:#9747FF;
+    --pinkcolor: #FF79DA;
+    --explorestaurant:#9356DC;
+    --heartgradient:#9747FF;
+    --greencolor: #99E2D0;
 
 }
 
 /****** Mise en page de l'application ***********/
 .main-container {
     width: 100%;
-    max-width: 375px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
+
+section {
+    display: block;
+}
+
+/****** Conteneur des sections restaurants et footer ***********/
+
+.container {    
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+}
+
+/****** Liste des étapes Fonctionnement ***********/
+
+ol {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+
