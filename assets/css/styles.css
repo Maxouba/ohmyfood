@@ -60,4 +60,13 @@ ol {
     padding-inline-start: 40px;
 }
 
+/****** Loader de la page ***********/
+
+.loader {
+    background-color: var(--backgroundcolor);
+    inset: 0;
+    z-index: 1;
+    opacity: 0.9;
+  }
+
 

@@ -6,8 +6,6 @@
 }
 
 
-
-
 /****** Image en header des pages de restaurant ***********/
 
 .header_img{
@@ -31,9 +29,7 @@
     overflow: hidden;
 }
 
-.menu-item{
-    animation: appear 1s;
-}
+
 
 /****** Titre du restaurant ***********/
 
@@ -46,25 +42,15 @@
     justify-content: space-between;
 }
 
+.menu__header i{
+    position: absolute;
+    right: 16px;
+}
+
 .menu__title {
     font-family: "Shrikhand", "cursive";
 }
 
-/****** Bouton coeur ***********/
-
-.menu__btn{
-    height: 2rem;
-    width: 2rem;
-    border: transparent 0px solid;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    position: relative;
-    background-color: #f6f6f6;
-    margin-left: 5px;
-}
 
 /****** Section des menus du restaurant ***********/
 
@@ -113,7 +99,49 @@
     padding: 15px;
     gap: 5px;
     flex: 1 0 0;
+    opacity: 0;
 }
+
+/****** Bouton coeur ***********/
+
+.menu__btn{
+    height: 2rem;
+    width: 2rem;
+    border: transparent 0px solid;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    background-color: #f6f6f6;
+    margin-left: 5px;
+}
+
+
+.heart-container{
+    display: flex;
+    align-items: center;
+}
+
+/****** Animation déroulante au lancement de la page des plats ***********/
+.menu-item{
+    animation: unfold 2s;
+    animation-fill-mode: both;
+}
+
+.submenus-1 .menu-item {
+    animation-delay: 0.5s;
+}
+
+.submenus-2 .menu-item {
+    animation-delay: 1s;
+}
+
+.submenus-3 .menu-item {
+    animation-delay: 1.5s;
+}
+
 
 
 /****** Nom du plat et accompagnement ***********/
@@ -155,8 +183,26 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding-left: 0.5rem;
+    margin-right: 4.2%;
 }
 
+/****** Coche verte au hover sur les plats ***********/
+
+.menu-item__good{
+    background-color: var(--greencolor);
+    overflow: hidden;
+    margin-right: -5rem;
+    width: 5rem;
+    height: 68.5px;
+    border-radius: 0 1rem 1rem 0;
+    padding: 0;
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+.menu-item__good:hover{
+    margin-right: 0;
+}
 /****** Bouton commander ***********/
 
 .sectionbtn{
@@ -195,7 +241,15 @@
         justify-content: center;
     }
 
-    
+
+    .heart-container{
+        position: relative;
+    }
+
+    .menu__header i {
+        right: unset;
+        left:24px;
+    }
 
 }
 

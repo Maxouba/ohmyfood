@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!--Logo onglet-->
+    <link rel="shortcut icon" type='Image/x-icon' href="./assets/restaurant/logo/ohmyfood_onglet.png">
+    
 </head>
 
 <body>
@@ -44,14 +48,15 @@
 <main class="menu">
     <div class="menu__header">
         <h2 class="menu__title">La note enchantée</h2>
-        <button class="menu__btn">
-            <i class="menu__like fa-regular fa-heart"></i>
-        </button>
+        <div class="heart-container">
+            <i class="fa-regular fa-heart like-icon__empty"></i>
+            <i class="fa-solid fa-heart like-icon__full"></i>
+        </div>
     </div>
 
             <!-- Entrées-->
 
-<div class="submenus">
+<div class="submenus-1">
     <section class="submenu">
         <h3 class="submenu__title">Entrées</h3>
         <div class="submenu__line"></div>
@@ -88,7 +93,7 @@
 
             <!-- Plats-->
 
-<div class="submenus">
+<div class="submenus-2">
     <section class="submenu">
         <h3 class="submenu__title">Plats</h3>
         <div class="submenu__line"></div>
@@ -119,7 +124,7 @@
 
             <!-- Desserts-->
 
-    <div class="submenus">
+    <div class="submenus-3">
         <section class="submenu">
             <h3 class="submenu__title">Dessert</h3>
             <div class="submenu__line"></div>
