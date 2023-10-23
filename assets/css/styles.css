@@ -63,10 +63,26 @@ ol {
 /****** Loader de la page ***********/
 
 .loader {
-    background-color: var(--backgroundcolor);
-    inset: 0;
-    z-index: 1;
-    opacity: 0.9;
-  }
+        height: 100vh;
+        background-color: white;
+        z-index: 100;
+        opacity: 0.9;
+        overflow: hidden;
+        animation: hide 0s ease-in 5s forwards;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
+.loader-points {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: block;
+        margin:15px auto;
+        color: var(--explorestaurant);
+        box-sizing: border-box;
+        animation: animloader 1s linear infinite alternate;
 
+      }
+    

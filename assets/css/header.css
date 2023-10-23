@@ -4,7 +4,7 @@
 
 /****** Encadré du logo ***********/
 header{
-    height: 79px;
+    height: 63px;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
     z-index: 1000;
 
@@ -12,9 +12,8 @@ header{
 
 /****** Logo Ohmyfood ***********/
 .ohmyfood_logo {
-    width: 15rem;
-    height: 36px;
-    padding-top: 20px;
+    height: 30px;
+    padding-top: 14px;
 }
 
 /****** Lien du Logo ***********/
@@ -24,6 +23,7 @@ header{
     text-decoration: none;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 /****** Flèche retour du header ***********/

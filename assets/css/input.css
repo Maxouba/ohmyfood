@@ -6,7 +6,7 @@
     align-items: center;
     flex-direction: row;
     background-color: var(--greycolor);
-    height: 62.5px;
+    height: 50px;
     position: relative;
 }
 
@@ -21,23 +21,25 @@ form {
 input{
     border: none;
     background-color: var(--greycolor);
-    height:30px;
+    height:100%;
 }
 
 
 ::placeholder{
     margin: 0%;
     color: var(--blackcolor);
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 16px;
     padding-right: 5px;
+    font-style: normal;
 }
 
 
 /****** Logo de localisation ***********/
 .fa-location-dot{
-    font-weight: 700;
-    margin-right: 1rem;
-    font-size: 1.2rem;
+    width: 3.2%;
+    height: 16px;
+    margin-right: 4.53%;
+
 }
 
