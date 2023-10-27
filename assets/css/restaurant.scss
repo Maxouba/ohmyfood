@@ -19,7 +19,7 @@
 
 /****** Cards des Restaurants ***********/
 
-.cards{
+.cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     column-gap: 2rem;
@@ -67,7 +67,7 @@
     justify-content: space-between;
 }
 
-.card__title{
+.card__title {
     margin: 0;
     margin-bottom: 0.25rem;
     font-weight: 700;
@@ -94,22 +94,22 @@
     right: 1rem;
     top: 50%;
     transform: translateY(-50%);
- }
+}
 
-.like-icon__full{
+.like-icon__full {
     opacity: 0;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image:linear-gradient(180deg, rgba(147, 86, 220, 1), rgba(255, 121, 218, 1) 70.71%),
-    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    background-image: linear-gradient(180deg, rgba(147, 86, 220, 1), rgba(255, 121, 218, 1) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
     opacity: 0;
     transition: all 200ms ease-in-out;
 }
 
 .like-icon__full:hover {
     opacity: 1;
-    }
+}
 
 /* Le code ci-dessous correspond à la version desktop uniquement */
 

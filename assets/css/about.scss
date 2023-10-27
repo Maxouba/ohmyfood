@@ -13,13 +13,13 @@ section {
 }
 
 /****** Titre A Propos ***********/
-.a_propos_title{
+.a_propos_title {
     margin: 0;
 }
 
 
 /****** Sous-titre A Propos ***********/
-.a_propos__subtitle{
+.a_propos__subtitle {
     font-weight: 300;
     height: 46px;
     width: 84%;
@@ -46,7 +46,7 @@ section {
 }
 
 .app-button:hover {
-    background-color :rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -61,8 +61,8 @@ section {
 
 @media (min-width:768px) {
 
-    .a_propos__title{
+    .a_propos__title {
         font-size: 40px;
-}
+    }
 
 }

@@ -1,14 +1,14 @@
 /****** Section menu des restaurants ***********/
 
 
-.header__restaurant{
+.header__restaurant {
     display: block;
 }
 
 
 /****** Image en header des pages de restaurant ***********/
 
-.header_img{
+.header_img {
     height: 275px;
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     box-shadow: none;
@@ -17,7 +17,7 @@
 
 /****** Container des pages de menu ***********/
 
-.menu{
+.menu {
     margin-top: -4rem;
     border-radius: 2rem 2rem 0 0;
     background-color: #f6f6f6;
@@ -25,7 +25,7 @@
     position: relative;
 }
 
-.submenu{
+.submenu {
     overflow: hidden;
 }
 
@@ -42,7 +42,7 @@
     justify-content: space-between;
 }
 
-.menu__header i{
+.menu__header i {
     position: absolute;
     right: 16px;
 }
@@ -64,7 +64,7 @@
     padding: 0 1rem;
 }
 
-.submenu__title{
+.submenu__title {
     text-transform: uppercase;
     position: relative;
     padding-bottom: 0.5rem;
@@ -74,7 +74,7 @@
 
 /****** Ligne sous les titres du type de plat ***********/
 
-.submenu__line{
+.submenu__line {
     content: "";
     width: 3rem;
     height: 0.25rem;
@@ -112,7 +112,7 @@
 
 /****** Bouton coeur ***********/
 
-.menu__btn{
+.menu__btn {
     height: 2rem;
     width: 2rem;
     border: transparent 0px solid;
@@ -127,13 +127,13 @@
 }
 
 
-.heart-container{
+.heart-container {
     display: flex;
     align-items: center;
 }
 
 /****** Animation déroulante au lancement de la page des plats ***********/
-.menu-item{
+.menu-item {
     animation: unfold 2s;
     animation-fill-mode: both;
 }
@@ -154,7 +154,7 @@
 
 /****** Nom du plat et accompagnement ***********/
 
-.menu-item__header{
+.menu-item__header {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -184,7 +184,7 @@
 
 }
 
-.menu-item__price{
+.menu-item__price {
 
     font-weight: bold;
     display: flex;
@@ -196,7 +196,7 @@
 
 /****** Coche verte au hover sur les plats ***********/
 
-.menu-item__good{
+.menu-item__good {
     background-color: var(--greencolor);
     overflow: hidden;
     margin-right: -5rem;
@@ -212,7 +212,7 @@
 
 /****** Logo check de la coche verte ***********/
 
-.menu-item__good i{
+.menu-item__good i {
     margin: auto;
     display: flex;
     justify-content: center;
@@ -225,7 +225,7 @@
 
 /****** Bouton commander ***********/
 
-.sectionbtn{
+.sectionbtn {
     display: flex;
     text-decoration: none;
     justify-content: center;
@@ -233,7 +233,7 @@
     padding-bottom: 40px;
 }
 
-.order{
+.order {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -249,28 +249,26 @@
 
     /****** Section des menus du restaurants ***********/
 
-    .menu{
+    .menu {
         margin-left: auto;
         margin-right: auto;
         width: 73%;
         flex-shrink: 0;
-        
+
     }
 
-    .menu__header{
+    .menu__header {
         justify-content: center;
     }
 
 
-    .heart-container{
+    .heart-container {
         position: relative;
     }
 
     .menu__header i {
         right: unset;
-        left:24px;
+        left: 24px;
     }
 
 }
-
-

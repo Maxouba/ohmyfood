@@ -1,0 +1,87 @@
+/****** Import ***********/
+@import "./header.scss";
+@import "./input.scss";
+@import "./about.scss";
+@import "./footer.scss";
+@import "./fonctionnement.scss";
+@import "./restaurant.scss";
+@import "./menu_restaurant.scss";
+@import "./animation.scss";
+
+/****** General ***********/
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/****** Couleur des différentes polices ***********/
+:root {
+    --bodycolor: #FFFFFF;
+    --backgroundcolor: #f6f6f6;
+    --greycolor: #EAEAEA;
+    --iconcolor: #7e7e7e;
+    --footercolor: #353535;
+    --blackcolor: #101010;
+    --pinkcolor: #FF79DA;
+    --explorestaurant: #9356DC;
+    --heartgradient: #9747FF;
+    --greencolor: #99E2D0;
+
+}
+
+/****** Mise en page de l'application ***********/
+.main-container {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: block;
+}
+
+/****** Conteneur des sections restaurants et footer ***********/
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+}
+
+/****** Liste des étapes Fonctionnement ***********/
+
+ol {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+/****** Loader de la page ***********/
+
+.loader {
+    height: 100vh;
+    background-color: white;
+    z-index: 100;
+    opacity: 0.9;
+    overflow: hidden;
+    animation: hide 0s ease-in 5s forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-points {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+    color: var(--explorestaurant);
+    box-sizing: border-box;
+    animation: animloader 1s linear infinite alternate;
+
+}

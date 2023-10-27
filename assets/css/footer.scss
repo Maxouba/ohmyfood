@@ -70,21 +70,23 @@ footer {
     flex-shrink: 0;
     }
 
-    .footer .container{
+    .footer .container {
         display: flex;
         flex-direction: row-reverse;
         padding: 0;
     }
 
-    .footer__list{
+    .footer__list {
         display: flex;
         flex-direction: row;
     }
 
-    .footer__list--page{
+    .footer__list--page {
         padding-left: 1rem;
     }
 
-    .footer__logo{
+    .footer__logo {
         padding-left: 2rem;
     }
+
+}

@@ -1,88 +1,874 @@
-/****** Import ***********/
-@import url(./header.css);
-@import url(./input.css);
-@import url(./about.css);
-@import url(./footer.css);
-@import url(./fonctionnement.css);
-@import url(./restaurant.css);
-@import url(./menu_restaurant.css);
-@import url(./animation.css);
+@charset "UTF-8";
+/****** Import ***********/ /****** Section Header***********/
+/****** Encadré du logo ***********/
+header {
+  height: 63px;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
 
+/****** Logo Ohmyfood ***********/
+.ohmyfood_logo {
+  height: 30px;
+  padding-top: 14px;
+}
+
+/****** Lien du Logo ***********/
+.logo_link {
+  display: flex;
+  border: none;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/****** Flèche retour du header ***********/
+.header__restaurant {
+  position: relative;
+  height: 100%;
+}
+
+.header__previous {
+  position: absolute;
+  margin-left: 2rem;
+  padding-right: 3rem;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: black;
+  font-size: 20px;
+}
+
+.arrow {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 32px;
+}
+
+/****** Section choix du restaurant ***********/
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: var(--greycolor);
+  height: 50px;
+  position: relative;
+}
+
+/****** Champ de saisie de la ville ***********/
+form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+input {
+  border: none;
+  background-color: var(--greycolor);
+  height: 100%;
+}
+
+::-moz-placeholder {
+  margin: 0%;
+  color: var(--blackcolor);
+  font-weight: 500;
+  font-size: 16px;
+  padding-right: 5px;
+  font-style: normal;
+}
+
+:-ms-input-placeholder {
+  margin: 0%;
+  color: var(--blackcolor);
+  font-weight: 500;
+  font-size: 16px;
+  padding-right: 5px;
+  font-style: normal;
+}
+
+::placeholder {
+  margin: 0%;
+  color: var(--blackcolor);
+  font-weight: 500;
+  font-size: 16px;
+  padding-right: 5px;
+  font-style: normal;
+}
+
+/****** Logo de localisation ***********/
+.fa-location-dot {
+  width: 3.2%;
+  height: 16px;
+  margin-right: 4.53%;
+}
+
+/****** Section A Propos ***********/
+.a_propos {
+  padding-top: 39px;
+  padding-bottom: 57px;
+  text-align: center;
+  background-color: var(--backgroundcolor);
+}
+
+section {
+  display: block;
+}
+
+/****** Titre A Propos ***********/
+.a_propos_title {
+  margin: 0;
+}
+
+/****** Sous-titre A Propos ***********/
+.a_propos__subtitle {
+  font-weight: 300;
+  height: 46px;
+  width: 84%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 15px auto 0;
+}
+
+/****** Bouton Explorer nos restaurants ***********/
+.app-button {
+  border: 0;
+  font-weight: 500;
+  border-radius: 100px;
+  color: white;
+  background-color: #686868;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
+  cursor: pointer;
+  transition-duration: 0.25s;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  height: 50px;
+  margin-top: 27px;
+  width: 58.13%;
+}
+
+.app-button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.explore {
+  width: 58%;
+  font-size: 24px;
+}
+
+/* Le code ci-dessous correspond à la version desktop uniquement */
+/****** Media queries ***********/
+@media (min-width: 768px) {
+  .a_propos__title {
+    font-size: 40px;
+  }
+}
+/****** Section Footer ***********/
+footer {
+  display: block;
+  background-color: var(--footercolor);
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/****** Logo du footer Ohmyfood ***********/
+.footer__logo {
+  color: white;
+  margin: 0;
+  font-size: 1.2rem;
+  justify-content: flex-start;
+}
+
+.footer__logo h3 {
+  font-family: "Shrikhand", cursive;
+}
+
+/****** Lien de navigation du footer ***********/
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__list--page {
+  margin: 0.5rem 0;
+}
+
+.footer__link {
+  color: white;
+  text-decoration: none;
+}
+
+/****** Icones du footer ***********/
+.footer__icon {
+  width: 1.2rem;
+  margin-right: 0.5rem;
+  position: relative;
+}
+
+/* Le code ci-dessous correspond à la version desktop uniquement */
+/****** Media queries ***********/
+@media (min-width: 768px) {
+  /****** Footer qui passe de colonne à ligne   ***********/
+  footer {
+    display: flex;
+    width: 96%;
+    height: 54px;
+    padding: 30px 25px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 16px;
+    flex-shrink: 0;
+  }
+  .footer .container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+  }
+  .footer__list {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer__list--page {
+    padding-left: 1rem;
+  }
+  .footer__logo {
+    padding-left: 2rem;
+  }
+}
+/****** Section Fonctionnement ***********/
+.fonctionnement {
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+  background-color: var(--bodycolor);
+}
+
+/****** Titre Fonctionnement ***********/
+.fonctionnement__title {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+/****** Liste des étapes Fonctionnement ***********/
+.fonctionnement_steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: compteListe;
+}
+
+.fonctionnement__number {
+  counter-increment: compteListe 1;
+  content: counter(compteListe) " ";
+  background: var(--explorestaurant);
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: -0.75rem;
+}
+
+/****** Bloc des étapes Fonctionnement ***********/
+.fonctionnement_step {
+  padding: 1.5rem;
+  margin: 1rem 0 1rem 0.75rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  border-radius: 1.25rem;
+  background-color: #f6f6f6;
+  display: flex;
+  position: relative;
+}
+
+/****** Icones de la liste  ***********/
+.fonctionnement_step i {
+  display: flex;
+  align-items: center;
+  color: var(--iconcolor);
+  margin-right: 1rem;
+}
+
+/****** Texte des étapes de fonctionnement ***********/
+.fonctionnement__subtitle {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Le code ci-dessous correspond à la version desktop uniquement */
+/****** Media queries ***********/
+@media (min-width: 768px) {
+  /****** Liste des étapes c  ***********/
+  /*Section Fonctionnement*/
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  /*Class pour toutes les étapes de fonctionnement*/
+  .fonctionnement_steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2%;
+  }
+  /*Class pour une étape de fonctionnement*/
+  .fonctionnement_step {
+    width: 33%;
+  }
+}
+/****** Section Restaurant ***********/
+.restaurant {
+  background-color: var(--greycolor);
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+}
+
+/****** Titre Restaurant ***********/
+.restaurant__title {
+  margin-bottom: 1rem;
+}
+
+/****** Cards des Restaurants ***********/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card__img {
+  height: 12rem;
+  width: 100%;
+  border: transparent solid 0px;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/****** Badge "Nouveau" dans les cards Restaurants ***********/
+.card__badge {
+  background-color: var(--greencolor);
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+}
+
+/****** Footer des cards Restaurants ***********/
+.card__footer {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.card__subtitle {
+  margin: 0;
+  font-weight: 300;
+}
+
+.card__container__title {
+  display: flex;
+  flex-direction: column;
+}
+
+/****** Icone coeur des cards Restaurants ***********/
+.card__footer i {
+  position: absolute;
+  height: 21px;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.like-icon__full {
+  opacity: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(180deg, rgb(147, 86, 220), rgb(255, 121, 218) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.like-icon__full:hover {
+  opacity: 1;
+}
+
+/* Le code ci-dessous correspond à la version desktop uniquement */
+/****** Media queries ***********/
+@media (min-width: 768px) {
+  /****** Cards des restaurants  ***********/
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .restaurant {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+  }
+  .restaurant__title {
+    margin-bottom: 28px;
+  }
+}
+/****** Section menu des restaurants ***********/
+.header__restaurant {
+  display: block;
+}
+
+/****** Image en header des pages de restaurant ***********/
+.header_img {
+  height: 275px;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+  box-shadow: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/****** Container des pages de menu ***********/
+.menu {
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+}
+
+.submenu {
+  overflow: hidden;
+}
+
+/****** Titre du restaurant ***********/
+.menu__header {
+  padding-top: 32px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__header i {
+  position: absolute;
+  right: 16px;
+}
+
+.menu__title {
+  font-family: "Shrikhand", "cursive";
+}
+
+/****** Section des menus du restaurant ***********/
+.submenus {
+  display: grid;
+}
+
+.submenu {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+.submenu__title {
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-weight: normal;
+  padding-top: 42px;
+}
+
+/****** Ligne sous les titres du type de plat ***********/
+.submenu__line {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: var(--greencolor);
+  left: 0;
+  bottom: 0;
+}
+
+/****** Card d'un item ***********/
+.menu-item {
+  background-color: white;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 100%;
+  padding: 15px;
+  padding-right: 0;
+  gap: 5px;
+  flex: 1 0 0;
+  opacity: 0;
+}
+
+.menu-item:hover .menu-item__good {
+  margin-right: 0;
+}
+
+/****** Bouton coeur ***********/
+.menu__btn {
+  height: 2rem;
+  width: 2rem;
+  border: transparent 0px solid;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: #f6f6f6;
+  margin-left: 5px;
+}
+
+.heart-container {
+  display: flex;
+  align-items: center;
+}
+
+/****** Animation déroulante au lancement de la page des plats ***********/
+.menu-item {
+  -webkit-animation: unfold 2s;
+          animation: unfold 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.submenus-1 .menu-item {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.submenus-2 .menu-item {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.submenus-3 .menu-item {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+/****** Nom du plat et accompagnement ***********/
+.menu-item__header {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1;
+}
+
+.submenu__title {
+  margin: 0;
+}
+
+.menu-item__title {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu-item__description {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.menu-item__price {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 0.5rem;
+  margin-right: 4.2%;
+}
+
+/****** Coche verte au hover sur les plats ***********/
+.menu-item__good {
+  background-color: var(--greencolor);
+  overflow: hidden;
+  margin-right: -5rem;
+  width: 5rem;
+  height: 68.5px;
+  border-radius: 0 0.75rem 0.75rem 0;
+  padding: 0;
+  margin-top: -15px;
+  margin-bottom: -15px;
+  transition: all 0.5s;
+  display: flex;
+}
+
+/****** Logo check de la coche verte ***********/
+.menu-item__good i {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--bodycolor);
+  font-size: 25px;
+}
+
+/****** Bouton commander ***********/
+.sectionbtn {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 49.6%;
+  font-size: 16px;
+}
+
+/* Le code ci-dessous correspond à la version desktop uniquement */
+/****** Media queries ***********/
+@media (min-width: 768px) {
+  /****** Section des menus du restaurants ***********/
+  .menu {
+    margin-left: auto;
+    margin-right: auto;
+    width: 73%;
+    flex-shrink: 0;
+  }
+  .menu__header {
+    justify-content: center;
+  }
+  .heart-container {
+    position: relative;
+  }
+  .menu__header i {
+    right: unset;
+    left: 24px;
+  }
+}
+@-webkit-keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes unfold {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes unfold {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes loader {
+  0% {
+    height: auto;
+  }
+  100% {
+    height: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    height: auto;
+  }
+  100% {
+    height: 0;
+  }
+}
+@-webkit-keyframes animloader {
+  0% {
+    box-shadow: -38px -6px, -14px 6px, 14px -6px;
+  }
+  33% {
+    box-shadow: -38px 6px, -14px -6px, 14px 6px;
+  }
+  66% {
+    box-shadow: -38px -6px, -14px 6px, 14px -6px;
+  }
+  100% {
+    box-shadow: -38px 6px, -14px -6px, 14px 6px;
+  }
+}
+@keyframes animloader {
+  0% {
+    box-shadow: -38px -6px, -14px 6px, 14px -6px;
+  }
+  33% {
+    box-shadow: -38px 6px, -14px -6px, 14px 6px;
+  }
+  66% {
+    box-shadow: -38px -6px, -14px 6px, 14px -6px;
+  }
+  100% {
+    box-shadow: -38px 6px, -14px -6px, 14px 6px;
+  }
+}
+@-webkit-keyframes hide {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+@keyframes hide {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
 /****** General ***********/
 * {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
 /****** Couleur des différentes polices ***********/
 :root {
-    --bodycolor: #FFFFFF;
-    --backgroundcolor: #f6f6f6;
-    --greycolor: #EAEAEA;
-    --iconcolor: #7e7e7e;
-    --footercolor: #353535;
-    --blackcolor:#101010;
-    --pinkcolor: #FF79DA;
-    --explorestaurant:#9356DC;
-    --heartgradient:#9747FF;
-    --greencolor: #99E2D0;
-
+  --bodycolor: #FFFFFF;
+  --backgroundcolor: #f6f6f6;
+  --greycolor: #EAEAEA;
+  --iconcolor: #7e7e7e;
+  --footercolor: #353535;
+  --blackcolor: #101010;
+  --pinkcolor: #FF79DA;
+  --explorestaurant: #9356DC;
+  --heartgradient: #9747FF;
+  --greencolor: #99E2D0;
 }
 
 /****** Mise en page de l'application ***********/
 .main-container {
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 section {
-    display: block;
+  display: block;
 }
 
 /****** Conteneur des sections restaurants et footer ***********/
-
-.container {    
-    max-width: 1280px;
-    margin: auto;
-    position: relative;
+.container {
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
 }
 
 /****** Liste des étapes Fonctionnement ***********/
-
 ol {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
 }
 
 /****** Loader de la page ***********/
-
 .loader {
-        height: 100vh;
-        background-color: white;
-        z-index: 100;
-        opacity: 0.9;
-        overflow: hidden;
-        animation: hide 0s ease-in 5s forwards;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+  height: 100vh;
+  background-color: white;
+  z-index: 100;
+  opacity: 0.9;
+  overflow: hidden;
+  -webkit-animation: hide 0s ease-in 5s forwards;
+          animation: hide 0s ease-in 5s forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .loader-points {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        display: block;
-        margin:15px auto;
-        color: var(--explorestaurant);
-        box-sizing: border-box;
-        animation: animloader 1s linear infinite alternate;
-
-      }
-    
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+  margin: 15px auto;
+  color: var(--explorestaurant);
+  box-sizing: border-box;
+  -webkit-animation: animloader 1s linear infinite alternate;
+          animation: animloader 1s linear infinite alternate;
+}/*# sourceMappingURL=styles.css.map */
