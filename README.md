@@ -7,3 +7,5 @@ L’équipe commerciale a déjà réussi à convaincre 4 restaurateurs d’utili
 👉 Le projet a été réalisé en HTML et CSS, en ajoutant des animations CSS telles que :
  - Des animations au hover pour les boutons, le coeur à côté des restaurants, ainsi qu'au survol les différents plats, une coche verte apparaît à droite.
  - Deux animations au chargement de la page, telles qu'un loader ainsi que le défilement des plats dans les pages des restaurants.
+
+Les fichiers CSS devaient être compilés en SCSS à la fin de ce projet.
